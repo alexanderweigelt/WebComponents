@@ -1,8 +1,15 @@
-# HTML 5 Boilerplate
+# Web Components
 
-Create a static site or simple app.
+A lightweight web components example. Web Components are a set of features that provide a standard component model for 
+the Web allowing for encapsulation and interoperability of individual HTML elements.
 
-## Building the application
+## Table of content
+
+| Name              | Description                                                  | Code                    | Attributes          |
+|-------------------|--------------------------------------------------------------|-------------------------|---------------------|
+| AutoCompleteInput | An input field with generated auto suggestions as drop down. | ``` <auto-complete> ``` | * name <br/>* value |
+
+## Usage
 
 First install dependencies:
 
@@ -26,10 +33,4 @@ To lint your code
 
 ```sh
 npm run lint
-```
-
-## Running
-
-```sh
-node dist/assets/bundle.js
 ```

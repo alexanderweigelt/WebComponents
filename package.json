@@ -1,10 +1,10 @@
 {
-    "name": "html5-boilerplate",
+    "name": "web-components",
     "private": true,
     "version": "0.0.1",
-    "description": "HTML5 Boilerplate",
+    "description": "A light weight web components example",
     "license": "MIT",
-    "author": "",
+    "author": "Alexander Weigelt",
     "main": "src/index.js",
     "scripts": {
         "build-dev": "webpack --mode development",

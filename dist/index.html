@@ -2,14 +2,9 @@
 <html class="no-js" lang="en">
 <head>
     <meta charset="utf-8">
-    <title></title>
-    <meta name="description" content="">
+    <title>Web Components</title>
+    <meta name="description" content="A light weight web components example">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta property="og:title" content="">
-    <meta property="og:type" content="">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
 
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
@@ -18,8 +13,35 @@
     <meta name="theme-color" content="#fafafa">
 </head>
     <body>
-        <div id="app"></div>
+        <h1>Web Components</h1>
 
+        <article id="autocomplete">
+            <h2>Autocomplete</h2>
+            <p>Start typing:</p>
+            <!--Make sure the form has the autocomplete function switched off:-->
+            <form id="auto-complete" action="index.html" method="post" name="auto-complete">
+                <auto-complete name="country" value="">
+                    <slot name="hidden-field">
+                        <input type="hidden">
+                    </slot>
+                </auto-complete>
+                <input type="submit" value="submit">
+            </form>
+        </article>
+
+        <script>
+            const autoCompleteForm = document.getElementById('auto-complete');
+            autoCompleteForm.addEventListener('submit', (e) => {
+                // pause to allow validation
+                e.preventDefault();
+
+                const formData = new FormData(autoCompleteForm);
+                // List key/value pairs
+                for(let [name, value] of formData) {
+                    console.log(`${name} = ${value}`);
+                }
+            });
+        </script>
         <script src="assets/bundle.js"></script>
     </body>
 </html>

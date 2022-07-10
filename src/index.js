@@ -5,6 +5,12 @@ import './css/main.scss'
 
 
 /**
- * App
+ * Get web components
  */
-// import { Main } from './js/main'
+import {AutoCompleteInput} from "./js/AutoCompleteInput";
+
+
+/**
+ * Define the new custom elements
+ */
+window.customElements.define('auto-complete', AutoCompleteInput)
