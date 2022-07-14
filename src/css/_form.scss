@@ -19,3 +19,11 @@ input[type="submit"] {
   background-color: dodgerblue;
   color: #fff;
 }
+
+increase-decrease::part(increase) {
+  border-radius: 0 4px 4px 0;
+}
+
+increase-decrease::part(decrease) {
+  border-radius: 4px 0 0 4px;
+}

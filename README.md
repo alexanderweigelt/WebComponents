@@ -3,11 +3,12 @@
 A lightweight web components example. Web Components are a set of features that provide a standard component model for 
 the Web allowing for encapsulation and interoperability of individual HTML elements.
 
-## Table of content
+## Examples
 
-| Name              | Description                                                  | Code                    | Attributes          |
-|-------------------|--------------------------------------------------------------|-------------------------|---------------------|
-| AutoCompleteInput | An input field with generated auto suggestions as drop down. | ``` <auto-complete> ``` | * name <br/>* value |
+| Name                  | Description                                                                 | Code                      | Attributes          |
+|-----------------------|-----------------------------------------------------------------------------|---------------------------|---------------------|
+| AutoCompleteInput     | An input field with generated auto suggestions as drop down.                | ``` <auto-complete> ```   | * name <br/>* value |
+| IncreaseDecreaseInput | Custom input field to change the quantity, e.g. to choose a product amount. | ```<increase-decre`se>``` |                     |
 
 ## Usage
 

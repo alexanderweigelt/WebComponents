@@ -1,5 +1,5 @@
 /**
- * Auto-complete class
+ * Autocomplete Input class
  */
 const template = document.createElement("template");
 template.innerHTML = `
