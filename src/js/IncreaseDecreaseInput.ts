@@ -70,3 +70,8 @@ export class IncreaseDecreaseInput extends HTMLElement {
         throw new Error('HTMLElement input with id `number` does not found in template')
     }
 }
+
+/**
+ * Define the new custom element `increase-decrease`
+ */
+window.customElements.define('increase-decrease', IncreaseDecreaseInput)

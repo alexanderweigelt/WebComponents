@@ -13,33 +13,46 @@
     <meta name="theme-color" content="#fafafa">
 </head>
 <body>
-<h1>Web Components</h1>
+<header>
+    <h1>Web Components</h1>
+</header>
 
-<article>
-    <h2>Autocomplete Input</h2>
-    <p>Start typing:</p>
-    <!--Make sure the form has the autocomplete function switched off:-->
-    <form id="auto-complete" action="index.html" method="post" name="auto-complete">
-        <auto-complete name="country" value="">
-            <slot name="hidden-field">
-                <input type="hidden">
-            </slot>
-        </auto-complete>
-        <input type="submit" value="submit">
-    </form>
-</article>
+<main>
+    <article>
+        <h2>Autocomplete Input</h2>
+        <p>Start typing:</p>
+        <!--Make sure the form has the autocomplete function switched off:-->
+        <form id="auto-complete" action="index.html" method="post" name="auto-complete">
+            <auto-complete name="country" value="">
+                <slot name="hidden-field">
+                    <input type="hidden">
+                </slot>
+            </auto-complete>
+            <input type="submit" value="submit">
+        </form>
+    </article>
 
-<article>
-    <h2>Increase/Decrease Input</h2>
-    <form id="increase-decrease" action="index.html" method="post" name="increase-decrease">
-        <template id="increase-decrease-template">
-            <button part="decrease" id="decrease">-</button>
-            <input part="number" id="number" type="text" value="0"/>
-            <button part="increase" id="increase">+</button>
-        </template>
-        <increase-decrease></increase-decrease>
-    </form>
-</article>
+    <article>
+        <h2>Increase/Decrease Input</h2>
+        <form id="increase-decrease" action="index.html" method="post" name="increase-decrease">
+            <template id="increase-decrease-template">
+                <button part="decrease" id="decrease">-</button>
+                <input part="number" id="number" type="text" value="0"/>
+                <button part="increase" id="increase">+</button>
+            </template>
+            <increase-decrease></increase-decrease>
+        </form>
+    </article>
+
+    <article>
+        <h2>Rating Stars</h2>
+        <rating-stars average="3.5" size="sm"></rating-stars>
+    </article>
+</main>
+
+<footer>
+    <p>&copy; 2023 by Alexander Weigelt</p>
+</footer>
 
 <script>
     const autoCompleteForm = document.getElementById('auto-complete');

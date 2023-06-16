@@ -3,6 +3,18 @@
    ========================================================================== */
 
 /*
+ * Use this to declare a set of CSS Custom Properties
+ */
+@use 'sass:meta';
+@use "variables";
+
+:root, :host {
+  @each $name, $value in meta.module-variables("variables") {
+    --#{$name}: #{$value};
+  }
+}
+
+/*
  * Hide visually and from screen readers
  */
 
