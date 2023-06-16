@@ -1,4 +1,4 @@
-docs/assets/*
+dist/assets/*
 node_modules/
 *.log
 package-lock.json
