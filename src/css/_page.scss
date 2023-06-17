@@ -1,11 +1,8 @@
 /* ==========================================================================
-   Import styles
+   Page styles
    ========================================================================== */
 
-@import "variables";
-@import "normalize";
-@import "helper";
-@import "print";
-@import "typography";
-@import "page";
-@import "form";
+.container {
+  max-width: 1024px;
+  margin: auto;
+}

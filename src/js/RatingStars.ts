@@ -17,10 +17,29 @@ export class RatingStars extends LitElement {
         :host {
             color: var(--color-blue, dodgerblue);
             background: var(--color-white, white);
-            font-size: var(--font-md, 1em);
+            font-size: var(--font-base, 1em);
             display: block;
-            padding: 8px;
-            margin: 8px;
+        }
+
+        [class^="rating-star-size-"] {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        
+        .rating-star-size-sm {
+            height: var(--font-sm, .8em);
+        }
+
+        .rating-star-size-md {
+            height: var(--font-md, 1em);
+        }
+
+        .rating-star-size-lg {
+            height: var(--font-lg, 1.6em);
+        }
+
+        .rating-star-size-xl {
+            height: var(--font-xl, 2.4em);
         }
     `;
 

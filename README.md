@@ -5,10 +5,13 @@ the Web allowing for encapsulation and interoperability of individual HTML eleme
 
 ## Examples
 
-| Name                  | Description                                                                 | Code                      | Attributes          |
-|-----------------------|-----------------------------------------------------------------------------|---------------------------|---------------------|
-| AutoCompleteInput     | An input field with generated auto suggestions as drop down.                | ``` <auto-complete> ```   | * name <br/>* value |
-| IncreaseDecreaseInput | Custom input field to change the quantity, e.g. to choose a product amount. | ```<increase-decre`se>``` |                     |
+| Name                  | Description                                                                                               | Code                     | Attributes            |
+|-----------------------|-----------------------------------------------------------------------------------------------------------|--------------------------|-----------------------|
+| AutoCompleteInput     | An input field with generated auto suggestions as drop down.                                              | ``` <auto-complete> ```  | * name <br/>* value   |
+| IncreaseDecreaseInput | Custom input field to change the quantity, e.g. to choose a product amount.                               | ```<increase-decrese>``` |                       |
+| RatingStars           | Rating stars tells users that the page is trustworthy and that past users have rated it in a certain way. | ```<rating-stars>```     | * average <br/>* size |
+
+See it in action: https://alexanderweigelt.github.io/WebComponents/
 
 ## Usage
 

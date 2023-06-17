@@ -6,10 +6,10 @@ template.innerHTML = `
 <style> 
     input {all: unset;}
     div {display: inline; position: relative; width: fit-content}
-    ul {position: absolute; list-style-type: none; margin: 0; padding: 0; width: calc(100% + 20px);;}
-    li {padding: 5px 10px; cursor: pointer; background-color: #fafafa;}
-    li:hover {background-color: #e9e9e9;}
-    .active {background-color: var(--color-blue, red); color: #ffffff;} 
+    ul {position: absolute; list-style-type: none; margin: 0; padding: 0; width: calc(100% + 20px);}
+    li {padding: 5px 10px; cursor: pointer; background-color: var(--color-silver, silver);}
+    li:hover {background-color: var(--color-gray, gray);}
+    .active {background-color: var(--color-blue, dodgerblue); color: var(--color-white, white);} 
 </style>
 `;
 

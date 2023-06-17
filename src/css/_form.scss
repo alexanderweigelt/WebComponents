@@ -5,25 +5,43 @@
 input,
 auto-complete {
   border: $border-width $border-style transparent;
-  background-color: $color-gray;
+  background-color: $color-silver;
   padding: 10px;
   font-size: 1em;
 }
 
 input[type="text"] {
-  background-color: $color-gray;
+  background-color: $color-silver;
   width: 100%;
 }
 
 input[type="submit"] {
   background-color: $color-blue;
   color: $color-white;
+  cursor: pointer;
 }
 
 increase-decrease::part(increase) {
-  border-radius: 0 $border-radius $border-radius 0;
+  border: $border-width $border-style transparent;
+  background-color: $color-blue;
+  color: $color-white;
+  padding: 10px;
+  font-size: 1em;
+  cursor: pointer;
 }
 
 increase-decrease::part(decrease) {
-  border-radius: $border-radius 0 0 $border-radius;
+  border: $border-width $border-style transparent;
+  background-color: $color-blue;
+  color: $color-white;
+  padding: 10px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+increase-decrease::part(number) {
+  border: $border-width $border-style transparent;
+  background-color: $color-silver;
+  padding: 10px;
+  font-size: 1em;
 }

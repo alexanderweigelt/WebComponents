@@ -13,11 +13,11 @@
     <meta name="theme-color" content="#fafafa">
 </head>
 <body>
-<header>
-    <h1>Web Components</h1>
+<header class="container">
+    <h1>Web Components Examples</h1>
 </header>
 
-<main>
+<main class="container">
     <article>
         <h2>Autocomplete Input</h2>
         <p>Start typing:</p>
@@ -37,7 +37,7 @@
         <form id="increase-decrease" action="index.html" method="post" name="increase-decrease">
             <template id="increase-decrease-template">
                 <button part="decrease" id="decrease">-</button>
-                <input part="number" id="number" type="text" value="0"/>
+                <input part="number" id="number" type="text" maxlength="4" size="4" value="0"/>
                 <button part="increase" id="increase">+</button>
             </template>
             <increase-decrease></increase-decrease>
@@ -46,11 +46,11 @@
 
     <article>
         <h2>Rating Stars</h2>
-        <rating-stars average="3.5" size="sm"></rating-stars>
+        <rating-stars average="3.5" size="lg"></rating-stars>
     </article>
 </main>
 
-<footer>
+<footer class="container">
     <p>&copy; 2023 by Alexander Weigelt</p>
 </footer>
 
